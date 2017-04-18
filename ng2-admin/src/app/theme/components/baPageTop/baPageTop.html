@@ -1,0 +1,16 @@
+<div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
+     [ngClass]="{scrolled: isScrolled}">
+  <div class="eui-nav-box">
+    <div class="eui-logo"><img class="animated-long" src="{{ ( 'eui-logo.png' | baAppPicture ) }}"></div>
+    <div class="eui-nav">
+      <div style="margin-left:-200px;margin-top: 25px; border:0px solid red;" class="bannerStyle">
+      </div>
+      <div style="margin-top:-57px;heigth:30px;">
+        <ul>
+          <li><a href="#" onclick="goTo('http://172.26.181.149:8080/ptwg/page/ssoLogin.jsp','','','')" style="font-family:'微软雅黑';font-size:16px;"><i></i>首 页</a></li>
+          <li class="on" id="supermap"><a href="#" style="font-family:'微软雅黑';font-size:16px;" onclick="goTo('http://172.26.181.143:9030/cpmp/frame/default/login/autoLogin.jsp','supermap','','')">城乡管理</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

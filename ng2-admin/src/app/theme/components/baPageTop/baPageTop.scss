@@ -1,0 +1,99 @@
+@import '../../sass/conf/conf';
+@import '../../components/baMsgCenter/baMsgCenter';
+
+.page-top {
+  background-color: $sidebar;
+  position: fixed;
+  z-index: 904;
+  box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width: 100%;
+  min-width: $resMin;
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+.eui-nav-box {
+  background: url(assets/img/eui-top-nav.jpg) no-repeat right top #055fb7;
+  height: 100px;
+  position: relative
+}
+
+.eui-logo {
+  background: url(assets/img/eui-logo-bg.png) no-repeat left top;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  width: 867px;
+}
+
+.eui-logo img {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 100ms;
+  animation-delay: 100ms;
+  margin: 2px 0 0 145px
+}
+
+.eui-nav {
+  position: absolute;
+  right: 0;
+  width: 914px;
+  height: 100px;
+}
+
+.eui-nav ul {
+  float: right;
+  padding: 87px 4px 0 0;
+}
+
+.eui-nav li {
+  border-bottom: 45px solid rgba(4, 5, 109, 0.7);
+  list-style-type: none;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  height: 0;
+  width: auto;
+  text-align: center;
+  float: left;
+  transition: all 0.5s;
+  line-height: 45px;
+  font-family: "微软雅黑";
+  font-size: 20px
+}
+
+.eui-nav li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.eui-nav li:hover {
+  border-bottom: 45px solid rgba(4, 5, 109, 1)
+}
+
+.eui-nav li.on {
+  border-bottom: 45px solid rgba(255, 255, 255, 1)
+}
+
+.eui-nav li.on a {
+  color: #04066d;
+  line-height: 45px;
+  height: 45px
+}
+
+.eui-nav li i {
+  width: 24px;
+  height: 24px;
+  background: url(assets/img/home.png) no-repeat right center;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  right: 6px
+}
+
+.eui-nav li.on i {
+  background-position: left center
+}
+
